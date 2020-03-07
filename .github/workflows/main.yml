@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Code formatter
-      uses: keanuplayz/TravBot-Testing-Actions@1.0.1
+      uses: keanuplayz/TravBotGH@1.0.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
