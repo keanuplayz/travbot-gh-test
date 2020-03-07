@@ -1,0 +1,11 @@
+on: [push, pull_request]
+name: TravBotGH
+jobs:
+  lint:
+    name: TravBotGH
+    runs-on: ubuntu-latest
+    steps:
+    - name: Code formatter
+      uses: keanuplayz/TravBot-GH@stable
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
